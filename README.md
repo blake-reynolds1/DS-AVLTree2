@@ -43,3 +43,24 @@
   - <img width="524" alt="Screen Shot 2022-06-28 at 5 14 11 PM" src="https://user-images.githubusercontent.com/89602311/176310920-148fabeb-2ca7-4c69-8c4f-2b60f992335f.png">
 * 3. Answer
   - <img width="521" alt="Screen Shot 2022-06-28 at 5 14 26 PM" src="https://user-images.githubusercontent.com/89602311/176311014-07c37316-100b-40ae-a0eb-3dc0759f782b.png">
+# AVL Trees Part 4: Implementation
+## Objectives
+* Definition
+* Implementation
+* Insertion algorithm
+* Deletion algorithm
+* Performance
+## Insert
+* <img width="632" alt="Screen Shot 2022-06-28 at 5 17 21 PM" src="https://user-images.githubusercontent.com/89602311/176312074-4a0b74d3-f498-49a9-8b55-a8704246f623.png">
+* <img width="451" alt="Screen Shot 2022-06-28 at 5 17 55 PM" src="https://user-images.githubusercontent.com/89602311/176312281-5abbb176-b65e-4af0-9ee7-35f5232d3a7a.png">
+* <img width="460" alt="Screen Shot 2022-06-28 at 5 18 09 PM" src="https://user-images.githubusercontent.com/89602311/176312364-28612c17-b22a-453d-bf11-5566ee8bbbfe.png">
+* <img width="472" alt="Screen Shot 2022-06-28 at 5 18 29 PM" src="https://user-images.githubusercontent.com/89602311/176312482-da2223aa-0baf-403f-994b-fd8bbff26770.png">
+* <img width="448" alt="Screen Shot 2022-06-28 at 5 18 56 PM" src="https://user-images.githubusercontent.com/89602311/176312671-f6486acd-8175-45a1-8927-cea7c6998338.png">
+* <img width="471" alt="Screen Shot 2022-06-28 at 5 19 14 PM" src="https://user-images.githubusercontent.com/89602311/176312780-d1bd18b9-e3b6-4b97-92df-76aaba84bca1.png">
+* <img width="455" alt="Screen Shot 2022-06-28 at 5 19 28 PM" src="https://user-images.githubusercontent.com/89602311/176312862-36bf6086-dcc1-4931-b55a-c350e52a189b.png">
+## Delete 
+* Rotation is needed when
+  - The shorter subtree becomes even shorter
+* How to fix
+  - Maintain a bool variable named shorter
+  - Shorter + balance factor -> try to tell which case it is? -> decide whether a single rotation or a double rotation
